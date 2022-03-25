@@ -1,9 +1,9 @@
 from reportlab.pdfgen        import canvas
 from reportlab.platypus      import Table
 from reportlab.lib.pagesizes import A4
-from reportlab.lib 		  import colors
+from reportlab.lib           import colors
 from xlprgrm                 import mrklst,getStdntDtl
-from body            import genHdrTest,Pdetails,genHdr
+from body                    import genHdrTest,Pdetails,genHdr
 
 from reportlab.graphics.shapes import Drawing
 from reportlab.graphics.charts.barcharts import HorizontalBarChart
@@ -20,7 +20,7 @@ def rpt(rawNum):
 	
 	barClr = colors.toColor('rgba (190, 252, 114,0.7)')
 	ltBlue = colors.toColor('rgba (135,206,250,0.5)')
-	blueClr1= colors.toColor('rgba (0,21,120,1)')#kattaBlue
+	blueClr1= colors.toColor('rgba (0,21,120,1)')#strongBlue
 	
 	
 	#--------Horizontal Grapgh ----------
@@ -32,8 +32,8 @@ def rpt(rawNum):
 	    grp[2]  = int( grp[2])/2
 	    datas   = tuple (grp)
 	    data    = [ datas
-	         #  (5, 20, 15, 12, 16, 8,20, 12),
-	           ]
+
+	
 	
 	    names = ["Physics","Chemistry","Mathematics","History","Geography","English","Hindi",'Biology']
 	    bc   = HorizontalBarChart()
